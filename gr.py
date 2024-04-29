@@ -21,4 +21,4 @@ def image_classifier(inp):
     return prediction
 
 demo = gr.Interface(fn=image_classifier, inputs="image", outputs="label")
-demo.launch()
+demo.launch(share=True)
